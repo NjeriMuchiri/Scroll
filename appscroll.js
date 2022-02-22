@@ -7,7 +7,6 @@ const navToggle = document.querySelector('.nav-toggle');
 const linksContainer = document.querySelector('.links-container');
 const links = document.querySelector('.links');
 
-
 navToggle.addEventListener('click', function(){
     // linksContainer.classList.toggle('show-links');
     const containerHeight = linksContainer.getBoundingClientRect().height;
@@ -22,4 +21,17 @@ navToggle.addEventListener('click', function(){
     }
 });
 
+const navbar = document.getElementById('nav');
+const topLink = document.querySelector('.top-link');
+
 // fixed navbar
+window.addEventListener('scroll',function(){
+    const scrollHeight = window.pageYOffset;
+    const navHeight = navbar.getBoundingClientRect().height;
+  if(scrollHeight > navHeight){
+      navbar.classList.add('fixed-nav');
+  }
+  else{
+      navbar.classList.remove('fixed-nav');
+  }
+})

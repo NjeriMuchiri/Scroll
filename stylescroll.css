@@ -14,11 +14,12 @@ nav{
     top:0;
     left:0;
     width:100%;
-    background:#ffff;
+    padding:0px;
+    background:#232b2b;
     box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .fixed-nav .links a{
-    color:#333;
+    color:#ffcc33;
 }
 .fixed-nav .links a:hover{
     color:#696969;
