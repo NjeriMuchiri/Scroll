@@ -9,15 +9,63 @@
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- stylesheet -->
     <link rel="stylesheet" href="stylescroll.css">
 </head>
 <body>
-
-    
+     <!-- header -->
+    <header id="home">
+        <!-- navbar -->
+        <nav id="nav">
+            <div class="nav-center">
+                <!-- nav-header -->
+                <div class="nav-header">
+                    <img src="./logo.svg" alt="logo" class="logo">
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- links -->
+                <div class="links-container">
+                    <ul class="links ">
+                   <li>
+                  <a href="#home" class="scroll-link">home</a>
+                   </li>
+                  <li>
+                 <a href="#about" class="scroll-link">about</a>
+                 </li>
+                   <li>
+                  <a href="#projects" class="scroll-link">projects</a>
+                  </li>
+                <li>
+                  <a href="#contact" class="scroll-link">contact</a>
+                   </li>
+                   </ul>
+                </div>
+            </div>
+        </nav>
+       <!-- banner -->
+       <div class="banner">
+           <div class="container">
+               <h1>Scroll Project</h1>
+               <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequatur aut debitis commodi iusto praesentium, molestias ratione consequuntur eaque eligendi.
+               </p>
+               <a href="#tours" class="scroll-link btn btn-white">Hire me</a>
+           </div>
+       </div>
+    </header>
+   <!-- about -->
+   <section id="about" class="section">
+       <div class="title">
+           <h2>about<span>us</span></h2>
+       </div>
+   </section>
     <!-- javascript -->
     <script src="appscroll.js"></script>
 </body>

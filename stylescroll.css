@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Great+Vibes&family=Lobster&family=Redressed&family=Satisfy&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+nav{
+    background:#232b2b;
+    /* background:#fcffa4; */
+    padding:1rem 1.5rem;
+}
+.fixed-nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#ffff;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.fixed-nav .links a{
+    color:#333;
+}
+.fixed-nav .links a:hover{
+    color:#696969;
+}
+.fixed-nav .links-container{
+    height:auto !important;
+}
+.nav-header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-toggle{
+    font-size:30px;
+    border-color:transparent;
+    background-color: transparent;
+    color:#ffff;
+    transition:all 0.3s linear;
+    cursor:pointer;
+}
+.nav-toggle:hover{
+    color:#b8860b;
+}
+.logo{
+    height:150px;
+}
+.links-container{
+    height:0;
+    transition:all 0.3s linear;
+    overflow:hidden;
+}
+.show-links{
+    height:200px;
+}
+.links a{
+    text-decoration: none;
+    background:#f5f5dc;
+    color:#898a74;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    display: block;
+    transition: all 0.3s linear;
+    font-weight: bold;
+    padding: 0.75rem 0;
+}
+.links a:hover{
+    color:#232b2b;
+}
+@media screen and (min-width:800px){
+    nav{
+        background:transparent;
+    }
+    .nav-center{
+        width:90vw;
+        max-width:1170px;
+        margin:0 auto;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-header{
+        padding:0;
+    }
+    .nav-toggle{
+        display:none;
+    }
+    .links-container{
+        height:auto !important;
+    }
+    .links{
+        display:flex;
+        list-style: none;
+    }
+    .links a{
+        display: block;
+        background:transparent;
+        font-size:1.0rem;
+        text-transform: uppercase;
+        color:#ffcc33;
+        margin:0 1rem;
+        font-weight:900;
+        padding:0;
+        letter-spacing:0.1rem;
+        transition:all 0.3s linear;
+    }
+    .links a:hover{
+        color:#FFFF;
+    }
+}
+header{
+    min-height:100vh;
+    background:linear-gradient(rgba(63,208,212,0.3),rgba(0,0,0,0.5)),url(Images/Kasheeoffice.jpg) center/cover no-repeat;
+}
+.banner{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+.container h1{
+     color:#f5f5dc;
+     letter-spacing: 0.1rem;
+     text-transform: uppercase;
+     margin-bottom:10px;
+}
+.container p{
+    max-width:25rem;
+    color:#dcdcdc;
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 768px){
+    .container p{
+        max-width:40rem;
+    }
+}
+.btn{
+    display:inline-block;
+    color:#dcdcdc;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing:0.1rem;
+    font-family: 'Lobster',cursive;
+    transition:all 0.3s linear;
+}
+.btn-white{
+    border:2px solid #b8860b;
+    background:#232b2b;
+    padding:5px 10px;
+}
+.btn:hover{
+    color:#ffcc33;
+}
+.section{
+    min-height:100vh;
+    display:flex;
+    /* align-items: center; */
+    margin-top:20px;
+    justify-content: center;
+    text-align: center;
+    background:linear-gradient(rgb(232, 217, 196));
+}
+.title h2{
+    text-transform: uppercase;
+    color:#b8860b;
+    letter-spacing: 0.1rem;
+    font-size:28px;
+}
+.title h2 span{
+    color:#ffcc33;
+}
+#about,
+#services,
+#tours {
+    height:80vh;
+}
+#services{
+    background:#dcdcdc;
+}
