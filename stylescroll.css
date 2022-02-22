@@ -55,8 +55,8 @@ nav{
 }
 .links a{
     text-decoration: none;
-    background:#f5f5dc;
-    color:#898a74;
+    /* background:#f5f5dc; */
+    color:#ffff;
     font-size: 1.1rem;
     text-transform: capitalize;
     letter-spacing: 0.1rem;
@@ -66,7 +66,7 @@ nav{
     padding: 0.75rem 0;
 }
 .links a:hover{
-    color:#232b2b;
+    color:#b8860b;
 }
 @media screen and (min-width:800px){
     nav{
@@ -155,7 +155,7 @@ header{
     color:#ffcc33;
 }
 .section{
-    min-height:100vh;
+    /* min-height:100vh; */
     display:flex;
     /* align-items: center; */
     margin-top:20px;
@@ -173,10 +173,54 @@ header{
     color:#ffcc33;
 }
 #about,
-#services,
-#tours {
+#projects,
+#contact {
+    padding-top:20px;
     height:80vh;
 }
-#services{
-    background:#dcdcdc;
+#projects{
+    background:rgb(239, 229, 215);
+}
+footer{
+        background: #dcdcdc;
+        padding:5rem 1rem;
+}
+footer p{
+    color:#b8860b;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    max-width:30rem;
+}
+.top-link{
+    font-size:1.25rem;
+    position:fixed;
+    bottom:3rem;
+    right:3rem;
+    background:#b8860b;
+    width:2rem;
+    height:2rem;
+    display:grid;
+    place-items:center;
+    border-radius:10px;
+    color:#dcdcdc;
+    animation:bounce 2s ease-in-out infinite;
+    visibility:hidden;
+    z-index:-100;
+}
+.show-link {
+    visibility: visible;
+    z-index: 100;
+}
+@keyframes bounce{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.5);
+    }
+    100%{
+        transform:scale(1);
+    }
 }
