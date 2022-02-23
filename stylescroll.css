@@ -4,6 +4,9 @@
     margin:0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 nav{
     background:#232b2b;
     /* background:#fcffa4; */
@@ -14,7 +17,7 @@ nav{
     top:0;
     left:0;
     width:100%;
-    padding:0px;
+    /* padding:0px; */
     background:#232b2b;
     box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -24,9 +27,10 @@ nav{
 .fixed-nav .links a:hover{
     color:#696969;
 }
-.fixed-nav .links-container{
+/* .fixed-nav .links-container
+{
     height:auto !important;
-}
+} */
 .nav-header{
     display:flex;
     align-items: center;

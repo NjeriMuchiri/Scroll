@@ -29,9 +29,16 @@ window.addEventListener('scroll',function(){
     const scrollHeight = window.pageYOffset;
     const navHeight = navbar.getBoundingClientRect().height;
   if(scrollHeight > navHeight){
-      navbar.classList.add('fixed-nav');
+    navbar.classList.add('fixed-nav');
   }
   else{
       navbar.classList.remove('fixed-nav');
+  }
+    
+  if(scrollHeight > 500) {
+      topLink.classList.add('show-link');
+  }
+  else{
+      topLink.classList.remove('show-link');
   }
 })
